@@ -1,0 +1,110 @@
+<mvc:View controllerName="Projeto2.controller.App"
+          xmlns="sap.m"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:l="sap.ui.layout"
+          xmlns:grid="sap.ui.layout.cssgrid"
+          xmlns:f="sap.f"
+          xmlns:card="sap.f.cards"
+          displayBlock="true">
+   <Panel headerText="" class="sapUiResponsiveMargin" width="auto">
+      <content >
+         <Text text="{i18n>headerGrid}" />
+         <f:GridList id="gridList" headerText="" items="{carros>/carros}">
+            <f:customLayout>
+               <grid:GridBasicLayout gridTemplateColumns="repeat(auto-fit, minmax(26rem, 1fr))" gridGap="1.5rem" />
+            </f:customLayout>
+            <f:GridListItem >
+               <f:Card class="sapUiSmallMargin" width="400px">
+                  <f:header >
+                     <card:Header title="{carros>nome}" subtitle="{carros>descricao}" />
+                  </f:header>
+                  <f:content >
+                     <VBox class="sapUiSmallMargin">
+                        <Image src="{carros>img}" width="50%" id="imagem" />
+                        <Button icon="sap-icon://zoom-in" press=".onBookPress" type="Emphasized" class="sapUiTinyMarginBegin"  />
+                     </VBox>
+                     
+                  </f:content>
+                  
+               </f:Card>
+
+            </f:GridListItem>
+         </f:GridList>
+      </content>
+   </Panel>
+</mvc:View>
+
+<!-- var oImage1 = new sap.m.Image("Image1", {
+			src: "webapp/img/car-1.png",
+			decorative: false,
+			width: "30%",
+			alt: "SAPUI5 Logo",
+			press: onPressImage
+		})
+		var oImage2 = new sap.m.Image("Image2", {
+			src: "webapp/img/car-2.png",
+			decorative: false,
+			width: "30%",
+			alt: "SAPUI5 Logo",
+			press: onPressImage
+		})
+
+		var oLabel = new sap.m.Label("rbgLabel", {
+			text: "Which logo do you like better?", layoutData: new sap.ui.layout.GridData({
+				span: 'XL12 L12 M12 S12'
+			})
+		})
+		//instantiate the RadioButton
+		var oRadioButton = new sap.m.RadioButton({
+			text: "Left Logo"
+		});
+		var oRadioButton2 = new sap.m.RadioButton({
+			text: "Right Logo"
+		});
+		// instantiate RadioButtonGroup with one attribute specifying the
+		// number of columns
+		var oRadioButtonGroup = new sap.m.RadioButtonGroup({
+			columns: 2,
+			layoutData: new sap.ui.layout.GridData({
+				span: 'XL12 L12 M12 S12'
+			}),
+			ariaLabelledBy: oLabel
+		});
+		// add the RadioButtons to the Button aggregation of the group
+		oRadioButtonGroup.addButton(oRadioButton);
+		oRadioButtonGroup.addButton(oRadioButton2);
+		//display the group onscreen
+		var oLabel2 = new sap.m.Label("rbg2Label", {
+			text: "Do you speak JavaScript?",
+			layoutData: new sap.ui.layout.GridData({
+				span: 'XL12 L12 M12 S12'
+			})
+		});
+
+		var oRadioButtonGroup2 = new sap.m.RadioButtonGroup({
+			columns: 2,
+			buttons: [
+				new sap.m.RadioButton({
+					text: "Yes"
+				}),
+				new sap.m.RadioButton({
+					text: "No"
+				}),
+			],
+			layoutData: new sap.ui.layout.GridData({
+				span: 'XL12 L12 M12 S12'
+			}),
+			ariaLabelledBy: "rbg2Label"
+		});
+
+		new sap.ui.layout.Grid({
+			content: [
+				oText,
+				oImage1,
+				oImage2,
+				oLabel,
+				oRadioButtonGroup,
+				oLabel2,
+				oRadioButtonGroup2]
+		}); -->
+<!-- .placeAt("content"); -->

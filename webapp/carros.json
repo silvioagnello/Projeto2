@@ -1,0 +1,34 @@
+{
+    "carros": [
+        {
+            "nome": "car-1",
+            "img": "webapp/img/car-1.png",
+            "descricao": "Primeiro carro da Lista"
+        },
+        {
+            "nome": "car-2",
+            "img": "webapp/img/car-2.png",
+            "descricao": "Segundo carro da Lista"
+        },
+        {
+            "nome": "car-3",
+            "img": "webapp/img/car-3.png",
+            "descricao": "Terceiro carro da Lista"
+        },
+        {
+            "nome": "car-4",
+            "img": "webapp/img/car-4.png",
+            "descricao": "Quarto carro da Lista"
+        },
+        {
+            "nome": "car-5",
+            "img": "webapp/img/car-5.png",
+            "descricao": "Quinto carro da Lista"
+        },
+        {
+            "nome": "car-6",
+            "img": "webapp/img/car-6.png",
+            "descricao": "Sexto carro da Lista"
+        }
+    ]
+}

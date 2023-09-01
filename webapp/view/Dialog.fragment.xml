@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Popover id="Dialog" title="{nome}">
+        <Image src="{img}" width="15em" densityAware="false" id="imgModal" />
+        <footer>
+            <OverflowToolbar>
+                <ToolbarSpacer />
+                <Button text="OK" press="onCloseDialog" />
+            </OverflowToolbar> 
+        </footer>
+    </Popover>
+</core:FragmentDefinition>
